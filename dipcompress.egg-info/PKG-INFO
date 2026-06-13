@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: dipcompress
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=2.4.6
+Requires-Dist: pillow>=12.2.0
+Requires-Dist: pytest>=9.0.3
