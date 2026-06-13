@@ -7,5 +7,6 @@ __author__ = "Subhadip"
 # from .encoder import compress
 # from .decoder import decompress
 from .image_io import load_image, save_image, pixels_to_bytes, bytes_to_pixels
+from .rle import rle_encode, rle_decode
 
-__all__ = ["load_image", "save_image", "pixels_to_bytes", "bytes_to_pixels"]
+__all__ = ["load_image", "save_image", "pixels_to_bytes", "bytes_to_pixels", "rle_encode", "rle_decode"]
