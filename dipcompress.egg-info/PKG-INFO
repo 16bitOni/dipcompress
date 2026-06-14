@@ -4,6 +4,7 @@ Version: 0.1.0
 Summary: Add your description here
 Requires-Python: >=3.11
 Description-Content-Type: text/markdown
+Requires-Dist: dataclasses>=0.8
 Requires-Dist: numpy>=2.4.6
 Requires-Dist: pillow>=12.2.0
 Requires-Dist: pytest>=9.0.3
