@@ -5,13 +5,45 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "dipcompress"
 version = "0.1.0"
-description = "Add your description here"
+description = "Lossless image compression using LZ77 + Huffman coding, with an optional C extension."
 readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Subhadip Mondal", email = "subhadipmondal789@gmail.com" }]
 requires-python = ">=3.11"
-dependencies = [
-    "dataclasses>=0.8",
-    "numpy>=2.4.6",
-    "pillow>=12.2.0",
-    "pytest>=9.0.3",
-    "setuptools>=82.0.1",
+keywords = ["image", "compression", "lz77", "huffman", "lossless"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: C",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: System :: Archiving :: Compression",
 ]
+dependencies = [
+    "numpy>=2.0",
+    "pillow>=10.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=9.0"]
+
+[project.scripts]
+dipcompress = "dipcompress.cli:main"
+
+[project.urls]
+Homepage   = "https://github.com/16bitOni/dipcompress"
+Repository = "https://github.com/16bitOni/dipcompress"
+Issues     = "https://github.com/16bitOni/dipcompress/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dipcompress*"]
+
+[tool.setuptools.package-data]
+dipcompress = ["_c_ext/*.c", "_c_ext/build.py"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

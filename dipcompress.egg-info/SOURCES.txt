@@ -1,7 +1,9 @@
 README.md
 pyproject.toml
 dipcompress/__init__.py
+dipcompress/__main__.py
 dipcompress/bitstream.py
+dipcompress/cli.py
 dipcompress/decoder.py
 dipcompress/encoder.py
 dipcompress/filters.py
@@ -14,9 +16,11 @@ dipcompress/rle.py
 dipcompress.egg-info/PKG-INFO
 dipcompress.egg-info/SOURCES.txt
 dipcompress.egg-info/dependency_links.txt
+dipcompress.egg-info/entry_points.txt
 dipcompress.egg-info/requires.txt
 dipcompress.egg-info/top_level.txt
 dipcompress/_c_ext/build.py
+dipcompress/_c_ext/compress.c
 dipcompress/_c_ext/setup.py
 tests/test_filters.py
 tests/test_huffman.py

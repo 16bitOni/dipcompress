@@ -1,13 +1,27 @@
 Metadata-Version: 2.4
 Name: dipcompress
 Version: 0.1.0
-Summary: Add your description here
+Summary: Lossless image compression using LZ77 + Huffman coding, with an optional C extension.
+Author-email: Subhadip Mondal <subhadipmondal789@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/16bitOni/dipcompress
+Project-URL: Repository, https://github.com/16bitOni/dipcompress
+Project-URL: Issues, https://github.com/16bitOni/dipcompress/issues
+Keywords: image,compression,lz77,huffman,lossless
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: C
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: System :: Archiving :: Compression
 Requires-Python: >=3.11
 Description-Content-Type: text/markdown
-Requires-Dist: dataclasses>=0.8
-Requires-Dist: numpy>=2.4.6
-Requires-Dist: pillow>=12.2.0
-Requires-Dist: pytest>=9.0.3
-Requires-Dist: setuptools>=82.0.1
+Requires-Dist: numpy>=2.0
+Requires-Dist: pillow>=10.0
+Provides-Extra: dev
+Requires-Dist: pytest>=9.0; extra == "dev"
 
 Dipcompress is my try to implement PNG style image compression from scratch

@@ -1,0 +1,2 @@
+[console_scripts]
+dipcompress = dipcompress.cli:main
