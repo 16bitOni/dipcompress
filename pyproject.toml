@@ -13,4 +13,5 @@ dependencies = [
     "numpy>=2.4.6",
     "pillow>=12.2.0",
     "pytest>=9.0.3",
+    "setuptools>=82.0.1",
 ]

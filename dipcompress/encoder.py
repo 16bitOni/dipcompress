@@ -3,7 +3,8 @@
 import numpy as np
 from .image_io import load_image, pixels_to_bytes
 from .filters import apply_filters
-from .lz77 import lz77_encode, tokens_to_bytes
+from .lz77_fast import lz77_encode, using_c as _lz77_using_c
+from .lz77 import tokens_to_bytes
 from .huffman import huffman_encode
 from .format import DipHeader, COMPRESS_DEFLATE, encode_filter_table, encode_huffman_table
 
@@ -33,7 +34,9 @@ def compress(input_path: str, output_path: str, verbose: bool = False) -> dict:
     filter_types = [ft for ft, _ in filtered_rows]
     filtered_data = b''.join(row for _, row in filtered_rows)
     
-    if verbose: print("Running LZ77...")
+    if verbose:
+        backend = "C" if _lz77_using_c else "Python"
+        print(f"Running LZ77 ({backend})...")
     lz77_tokens = lz77_encode(filtered_data)
     lz77_bytes = tokens_to_bytes(lz77_tokens)
     

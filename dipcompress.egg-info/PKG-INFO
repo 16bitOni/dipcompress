@@ -8,3 +8,6 @@ Requires-Dist: dataclasses>=0.8
 Requires-Dist: numpy>=2.4.6
 Requires-Dist: pillow>=12.2.0
 Requires-Dist: pytest>=9.0.3
+Requires-Dist: setuptools>=82.0.1
+
+Dipcompress is my try to implement PNG style image compression from scratch
