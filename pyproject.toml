@@ -7,14 +7,13 @@ name = "dipcompress"
 version = "0.1.0"
 description = "Lossless image compression using LZ77 + Huffman coding, with an optional C extension."
 readme = "README.md"
-license = { text = "MIT" }
+license = "MIT"
 authors = [{ name = "Subhadip Mondal", email = "subhadipmondal789@gmail.com" }]
 requires-python = ">=3.11"
 keywords = ["image", "compression", "lz77", "huffman", "lossless"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
@@ -47,3 +46,11 @@ dipcompress = ["_c_ext/*.c", "_c_ext/build.py"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "numpy>=2.4.6",
+    "pillow>=12.2.0",
+    "pytest>=9.0.3",
+    "setuptools>=82.0.1",
+]
