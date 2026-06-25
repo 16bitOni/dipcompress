@@ -1,5 +1,6 @@
 README.md
 pyproject.toml
+setup.py
 dipcompress/__init__.py
 dipcompress/__main__.py
 dipcompress/bitstream.py
@@ -19,6 +20,7 @@ dipcompress.egg-info/dependency_links.txt
 dipcompress.egg-info/entry_points.txt
 dipcompress.egg-info/requires.txt
 dipcompress.egg-info/top_level.txt
+dipcompress/_c_ext/compress.c
 dipcompress/_c_ext/build.py
 dipcompress/_c_ext/compress.c
 dipcompress/_c_ext/setup.py
