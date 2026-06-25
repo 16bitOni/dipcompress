@@ -25,7 +25,7 @@ jobs:
           CIBW_BUILD: cp311-* cp312-*
 
           # Architectures
-          CIBW_ARCHS_LINUX:   x86_64 aarch64
+          CIBW_ARCHS_LINUX:   x86_64
           CIBW_ARCHS_MACOS:   x86_64 arm64
           CIBW_ARCHS_WINDOWS: AMD64
 
