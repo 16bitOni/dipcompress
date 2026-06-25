@@ -200,7 +200,6 @@ dipcompress/
 ├── huffman.py        # Huffman encode/decode
 ├── format.py         # .dip binary format (header, tables)
 ├── image_io.py       # PIL image load/save helpers
-├── bitstream.py      # bit-level I/O
 └── _c_ext/           # C source for LZ77
 ```
 
