@@ -217,4 +217,4 @@ Built by [Subhadip Mondal](https://github.com/16bitOni).
 
 The compression algorithms, binary format, filter logic, and architecture were all designed and written by hand.
 
-The GitHub Actions CI/CD pipeline, `setup.py` C extension build config, and PyPI publishing workflow were put together at the last minute with help from [Claude](https://claude.ai) — because apparently even people who implement Huffman coding from scratch draw the line at YAML indentation errors at 2 AM. No shame.
+The GitHub Actions CI/CD pipeline, `setup.py` C extension build config, and PyPI publishing workflow were put together at the last minute with help from [Claude](https://claude.ai) — because apparently even people who implement Huffman coding from scratch draw the line at YAML indentation errors at 2 AM.
